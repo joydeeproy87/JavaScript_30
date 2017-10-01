@@ -1,7 +1,7 @@
 # JavaScript_30
 30 Days Vanilla JS Challenge
 
-01-JavaScript-Drum-Kit - <a href="https://joydeeproy87.github.io/JavaScript_30/01-JavaScript_Drum_Kit" target="_blank">01-JavaScript-Drum-Kit</a>
+01-JavaScript-Drum-Kit - <a href="https://joydeeproy87.github.io/JavaScript_30/01-JavaScript_Drum_Kit" target="_blank">https://joydeeproy87.github.io/JavaScript_30/01-JavaScript_Drum_Kit</a>
 
 
-02-JS-and-CSS-Clock - <a href="https://joydeeproy87.github.io/JavaScript_30/02-JS_and_CSS_Clock" target="_blank">02-JS-and-CSS-Clock</a>
+02-JS-and-CSS-Clock - <a href="https://joydeeproy87.github.io/JavaScript_30/02-JS_and_CSS_Clock" target="_blank">https://joydeeproy87.github.io/JavaScript_30/02-JS_and_CSS_Clock</a>
