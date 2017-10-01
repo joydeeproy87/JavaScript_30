@@ -1,7 +1,6 @@
 html {
   font-size: 10px;
-  background: url(../img/background.jpg) center center;
-  background-size: cover;
+  background: black;
 }
 body, html {
   margin: 0;
@@ -9,30 +8,20 @@ body, html {
   font-family: sans-serif;
 }
 
-.info-box {
-  display: flex;
-  flex: 1;
-  min-height: 10vh;
-  font-size: 2rem;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 0, 1);
-  color: yellow;
-}
 .keys {
   display: flex;
   flex: 1;
-  min-height: 90vh;
+  min-height: 85vh;
   align-items: center;
   justify-content: center;
 }
 .key {
-  border: .4rem solid black;
+  border: .4rem solid yellow;
   border-radius: .5rem;
   margin: 1rem;
   font-size: 1.5rem;
   padding: 1rem .5rem;
-  transition: all .05s ease;
+  transition: all .05s;
   width: 10rem;
   text-align: center;
   color: white;
@@ -50,7 +39,18 @@ kbd {
   color: yellow;
 }
 .playing {
-  transform: scale(1.1);
+  transform: scale(1.2);
   border-color: yellow;
   box-shadow: 0 0 1rem yellow;
+}
+
+.info-box {
+  display: flex;
+  flex: 1;
+  min-height: 15vh;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 1);
+  color: yellow;
 }
