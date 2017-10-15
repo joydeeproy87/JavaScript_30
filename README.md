@@ -1,4 +1,4 @@
-# JavaScript_30 - 30 Days Vanilla JS Challenge.
+# 30 Days Vanilla JS Challenge.
 Visit the links to know more!!!
 
 01-JavaScript-Drum-Kit - <a href="https://joydeeproy87.github.io/JavaScript_30/01-JavaScript_Drum_Kit" target="_blank">https://joydeeproy87.github.io/JavaScript_30/01-JavaScript_Drum_Kit/</a>
