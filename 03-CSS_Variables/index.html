@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Scoped CSS Variables and JS</title>
+  <style>
+    :root {
+      --base: yellow;
+      --spacing: 5px;
+      --blur: 2px;
+    }
+    img {
+      padding: var(--spacing);
+      background: var(--base);
+      filter: blur(var(--blur));
+    }
+    .hl {
+      color: var(--base);
+    }
+    body {
+      text-align: center;
+      background: #000000;
+      color: #FFFFFF;
+      font-family: sans-serif;
+      font-weight: bold;
+      font-size: 35px;
+    }
+    .controls {
+      margin-bottom: 50px;
+    }
+    input {
+      width: 100px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Update CSS Variables with <span class='hl'>JS</span></h2>
+  <div class="controls">
+    <label for="spacing">Spacing:</label>
+    <input id="spacing" type="range" name="spacing" min="5" max="50" value="20" data-sizing="px">
+
+    <label for="blur">Blur:</label>
+    <input id="blur" type="range" name="blur" min="0" max="25" value="2" data-sizing="px">
+
+    <label for="base">Color:</label>
+    <input id="base" type="color" name="base" value="#FFFF00">
+  </div>
+
+  <img src="https://source.unsplash.com/mKA3VavSuaI/750x300" alt="night">
+
+<script type="text/javascript">
+  const inputs = document.querySelectorAll('.controls input');
+  console.log(inputs);
+  function updateHandler() {
+    const suffix =  this.dataset.sizing || '';
+    document.documentElement.style.setProperty(`--${this.name}`, this.value + suffix);
+  }
+
+  inputs.forEach(input => input.addEventListener('change', updateHandler));
+  inputs.forEach(input => input.addEventListener('mousemove', updateHandler));
+</script>
+</body>
+</html>
