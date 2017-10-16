@@ -7,7 +7,7 @@ Visit the links to know more!!!
 02-JS-and-CSS-Clock - <a href="https://joydeeproy87.github.io/JavaScript_30/02-JS_and_CSS_Clock" target="_blank">https://joydeeproy87.github.io/JavaScript_30/02-JS_and_CSS_Clock/</a>
 
 
-03-CSS-Variables - Pending!!
+03-CSS-Variables - <a href="https://joydeeproy87.github.io/JavaScript_30/03-CSS_Variables" target="_blank">https://joydeeproy87.github.io/JavaScript_30/03-CSS_Variables/</a>
 
 
 04-Array-Cardio-Day-1 - <a href="https://joydeeproy87.github.io/JavaScript_30/04-Array_Cardio_Day_1" target="_blank">https://joydeeproy87.github.io/JavaScript_30/04-Array_Cardio_Day_1/</a>
