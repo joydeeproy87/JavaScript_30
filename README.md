@@ -23,3 +23,6 @@ Visit the links to know more!!!
 
 
 08 - Fun with HTML5 Canvas - <a href="https://joydeeproy87.github.io/JavaScript_30/08-Fun_with_HTML5_Canvas/" target="_blank">https://joydeeproy87.github.io/JavaScript_30/08-Fun_with_HTML5_Canvas</a>
+
+
+09 - Dev_Tools_Domination - <a href="https://joydeeproy87.github.io/JavaScript_30/09-Dev_Tools_Domination/" target="_blank">https://joydeeproy87.github.io/JavaScript_30/09-Dev_Tools_Domination</a>

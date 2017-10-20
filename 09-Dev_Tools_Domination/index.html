@@ -2,44 +2,100 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Console Tricks!</title>
+	<title>09-Dev Tools Domination</title>
+	<style>
+		html, body {
+			background-color: black;
+			color: yellow;
+		}
+	</style>
 </head>
 <body>
-
-	<p onClick="makeGreen()">×BREAK×DOWN×</p>
+	<p onClick="makeGreen()"><< Expand This >></p>
+	<p><em>Hit "F12" or open console then refresh this page to see this in action!!!</em></p>
 
 	<script>
 		const dogs = [{ name: 'Snickers', age: 2 }, { name: 'hugo', age: 8 }];
 
-		function makeGreen() {
+		function makeGreen () {
 			const p = document.querySelector('p');
-			p.style.color = '#BADA55';
 			p.style.fontSize = '50px';
 		}
 
+		// clearing
+		console.clear();
+
 		// Regular
+		console.log('hello there!');
+
+		// Table
+		console.table(dogs);
 
 		// Interpolated
+		console.log('the Interpolated value is %s hrs', '24');
 
 		// Styled
+		console.log('%cthis is a styled text', 'font-size: 24px; color: yellow; background: black');
 
 		// warning!
+		console.warn('Careful! this is a custom console warning');
 
 		// Error :|
+		console.error('What the heck!! this is a custom console error!');
 
 		// Info
+		console.info('this is a custom console info, every day is 24hrs!!');
 
 		// Testing
-
-		// clearing
+		// console.assert works if the conditions given in the first place fails
+		console.assert(1 === 2, 'this is not right!!!');
 
 		// Viewing DOM Elements
+		const p = document.querySelector('p');
+		console.log(p);
+		// console.dir => Displays an interactive list of the properties of the specified JavaScript object
+		console.dir(p);
 
 		// Grouping together
+		// console.group & console.groupEnd => prints data as a collapsable format
+		dogs.forEach(dog => {
+			// group start
+			console.group(`${dog.name}`);
+			console.log(`This is ${dog.name}`);
+			console.log(`${dog.name} named dog is ${dog.age * 7} dog years old!!`);
+			console.groupEnd(`${dog.name}`);
+			// group end
+		});
+
+		// console.groupCollapsed & console.groupEnd => well if you want your data to be collapsed onload try this
+		dogs.forEach(dog => {
+			// collapse group start
+			console.groupCollapsed(`${dog.name}`);
+			console.log(`This is ${dog.name}`);
+			console.log(`${dog.name} named dog is ${dog.age * 7} dog years old!!`);
+			console.groupEnd(`${dog.name}`);
+			// collapsed group end
+		});
 
 		// counting
+		// can be used to count the number of instances
+		console.count('Joydeep');
+		console.count('I also go by the alias name ical47');
+		console.count('Joydeep');
+		console.count('I also go by the alias name ical47');
+		console.count('I also go by the alias name ical47');
 
 		// timing
+		// console.time & console.timeEnd() => can be used togerther to test performance
+		// timer start
+		console.time('fecthing data');
+		fetch('https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json')
+		.then(data => data.json())
+		.then(data => {
+			// timer end
+			console.timeEnd('fecthing data');
+			console.log(data);
+		});
 
 	</script>
 </body>
