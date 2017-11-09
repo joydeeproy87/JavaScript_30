@@ -97,6 +97,8 @@
 		let lastChecked;
 
 		function handleCheck(e) {
+			const _this = this;
+
 			// check if the 'Shift' key is down
 			// and check if the checkbox is getting 'checked'
 			let inBetween = false;
@@ -105,7 +107,7 @@
 				checkboxes.forEach(checkbox => {
 					// console.log(checkbox);
 					// saving inBetween checkboxes inside a 'inBetween' variable
-					if (checkbox === this || checkbox === lastChecked) {
+					if (checkbox === _this || checkbox === lastChecked) {
 						// fliping inBetween variable value
 						inBetween = !inBetween;
 						console.log(inBetween);
