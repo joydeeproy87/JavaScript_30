@@ -26,3 +26,6 @@ Visit the links to know more!!!
 
 
 09 - Dev_Tools_Domination - <a href="https://joydeeproy87.github.io/JavaScript_30/09-Dev_Tools_Domination/" target="_blank">https://joydeeproy87.github.io/JavaScript_30/09-Dev_Tools_Domination</a>
+
+
+10 - Hold_Shift_and_Check_Checkboxes - <a href="https://joydeeproy87.github.io/JavaScript_30/10-Hold_Shift_and_Check_Checkboxes/" target="_blank">https://joydeeproy87.github.io/JavaScript_30/10-Hold_Shift_and_Check_Checkboxes</a>
