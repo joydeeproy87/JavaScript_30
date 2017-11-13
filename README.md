@@ -29,3 +29,6 @@ Visit the links to know more!!!
 
 
 10 - Hold_Shift_and_Check_Checkboxes - <a href="https://joydeeproy87.github.io/JavaScript_30/10-Hold_Shift_and_Check_Checkboxes/" target="_blank">https://joydeeproy87.github.io/JavaScript_30/10-Hold_Shift_and_Check_Checkboxes</a>
+
+
+11 - Custom Video Player - <a href="https://joydeeproy87.github.io/JavaScript_30/11-Custom_Video_Player/" target="_blank">https://joydeeproy87.github.io/JavaScript_30/11-Custom_Video_Player</a>
