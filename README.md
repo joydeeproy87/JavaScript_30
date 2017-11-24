@@ -25,10 +25,10 @@ Visit the links to know more!!!
 08 - Fun with HTML5 Canvas - <a href="https://joydeeproy87.github.io/JavaScript_30/08-Fun_with_HTML5_Canvas/" target="_blank">https://joydeeproy87.github.io/JavaScript_30/08-Fun_with_HTML5_Canvas</a>
 
 
-09 - Dev_Tools_Domination - <a href="https://joydeeproy87.github.io/JavaScript_30/09-Dev_Tools_Domination/" target="_blank">https://joydeeproy87.github.io/JavaScript_30/09-Dev_Tools_Domination</a>
+09 - Dev Tools Domination - <a href="https://joydeeproy87.github.io/JavaScript_30/09-Dev_Tools_Domination/" target="_blank">https://joydeeproy87.github.io/JavaScript_30/09-Dev_Tools_Domination</a>
 
 
-10 - Hold_Shift_and_Check_Checkboxes - <a href="https://joydeeproy87.github.io/JavaScript_30/10-Hold_Shift_and_Check_Checkboxes/" target="_blank">https://joydeeproy87.github.io/JavaScript_30/10-Hold_Shift_and_Check_Checkboxes</a>
+10 - Hold Shift and Check Checkboxes - <a href="https://joydeeproy87.github.io/JavaScript_30/10-Hold_Shift_and_Check_Checkboxes/" target="_blank">https://joydeeproy87.github.io/JavaScript_30/10-Hold_Shift_and_Check_Checkboxes</a>
 
 
 11 - Custom Video Player - <a href="https://joydeeproy87.github.io/JavaScript_30/11-Custom_Video_Player/" target="_blank">https://joydeeproy87.github.io/JavaScript_30/11-Custom_Video_Player</a>
