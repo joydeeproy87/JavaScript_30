@@ -22,21 +22,20 @@
 		const addItems = document.querySelector('.add-items');
 		const itemsList = document.querySelector('.plates');
 
+		// updating items from localstorage, if not found in localstorage the initialize blank array
 		const items = JSON.parse(localStorage.getItem('items')) || [];
 
 		function addItem (e) {
 			e.preventDefault();
 			const text = (this.querySelector('[name=item]')).value;
-			// console.log(text);
-			const item = {
-				text,
-				done: false
-			};
+			const item = { text, done: false };
 
 			items.push(item);
-			// console.clear();
-			// console.table(items);
+
+			// updating the list
 			populateList(items, itemsList);
+
+			// saving data to localstorage
 			localStorage.setItem('items', JSON.stringify(items));
 			this.reset();
 		}
@@ -53,7 +52,22 @@
 		}
 
 		function toggleDone (e) {
-			console.log(e.target);
+			// return if e.target in not 'input'
+			if (!e.target.matches('input')) {
+				return;
+			}
+
+			const el = e.target;
+			const index = el.dataset.index;
+
+			// uncheck if already checked and vice versa
+			items[index].done = !items[index].done;
+
+			// updating values to locastorage
+			localStorage.setItem('items', JSON.stringify(items));
+
+			// updating list
+			populateList(items, itemsList);
 		}
 
 		addItems.addEventListener('submit', addItem);
