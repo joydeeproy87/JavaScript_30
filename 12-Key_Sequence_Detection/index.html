@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>12-Key Sequence Detection</title>
+	<title>12-Key Sequence Detection (KONAMI code detection)</title>
 	<style>
 		html, body {
 			background-color: black;
@@ -11,9 +11,9 @@
 	</style>
 </head>
 <body>
-	<p><em>Hit "F12" or open console then press any key on keyboard, if you type "joy" (which is our KONAMI code this case) you will be surprised!!!</em></p>
+	<p><em>Type "joy" and you will be surprised!!!</em></p>
+	<p><em>Hit "F12" or open console to see this in more detail</em></p>
 
-	<script src="cornify.js"></script>
 	<script>
 		const pressed = [];
 		const secretCode = 'joy';
@@ -27,10 +27,15 @@
 			console.log(pressed);
 
 			if (pressed.join('') === secretCode) {
-				console.log('yayyyy!!!!');
-				cornify_add();
-			}			
+				document.body.style.color = getRandomColor();
+				console.log('font color changed!!');
+			}
 		});
+
+		function getRandomColor () {
+			var hex = Math.floor(Math.random() * 0xFFFFFF);
+			return "#" + ("000000" + hex.toString(16)).substr(-6);
+		}
 	</script>
 </body>
 </html>
