@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>12-Key Sequence Detection</title>
+	<style>
+		html, body {
+			background-color: black;
+			color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<p><em>Hit "F12" or open console then press any key on keyboard, if you type "ical47" (which is our KONAMI code this case) you will be surprised!!!</em></p>
+
+	<script src="cornify.js"></script>
+	<script>
+		const pressed = [];
+		const secretCode = 'ical47';
+		window.addEventListener('keyup', (event) => {
+			// console.log(event.key);
+			pressed.push(event.key);
+			pressed.splice(-secretCode.length - 1, pressed.length - secretCode.length);
+			console.log(pressed);
+			
+		});
+	</script>
+</body>
+</html>
