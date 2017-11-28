@@ -2,55 +2,7 @@
 <html lang="en">
 <head>
 	<title>02-JS and CSS Clock</title>
-	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
-	<style>
-		html {
-			background: black;
-			font-family: sans-serif;
-			text-align: center;
-			font-size: 10px;
-		}
-		body {
-			font-size: 2rem;
-			display: flex;
-			height: 100vh;
-			align-items: center;
-			justify-content: center;
-		}
-
-		.clock {
-			width: 30rem;
-			height: 30rem;
-			border: 20px solid yellow;
-			border-radius: 50%;
-			position: relative;
-			padding: 2px;
-		}
-		.clock-face {
-			position: relative;
-			width: 95%;
-			height: 95%;
-			top: 2.5%;
-			margin: 0 auto;
-		}
-		.hand {
-			width: 50%;
-			background: white;
-			position: absolute;
-			top: 50%;
-			transform-origin: 100%;
-			transform: rotate(90deg);
-		}
-		.hour-hand {
-			height: 6px;
-		}
-		.minute-hand {
-			height: 3px;
-		}
-		.second-hand {
-			height: 2px;
-		}
-	</style>
+	<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 <body>
 	<div class="clock">
@@ -62,7 +14,7 @@
 	</div>
 
 
-	<script type="text/javascript">
+	<script>
 		// alert('JavaScript and CSS Clock');
 
 		const secondHand = document.querySelector('.second-hand');
