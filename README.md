@@ -40,4 +40,7 @@ Visit the links to know more!!!
 13 - Slide in on Scroll - <a href="https://joydeeproy87.github.io/JavaScript_30/13-Slide_in_on_Scroll/" target="_blank">See Demo</a>
 
 
+14 - JavaScript References VS Copying - <a href="https://joydeeproy87.github.io/JavaScript_30/14-JavaScript_References_VS_Copying/" target="_blank">See Demo</a>
+
+
 15 - LocalStorage - <a href="https://joydeeproy87.github.io/JavaScript_30/15-LocalStorage/" target="_blank">See Demo</a>
