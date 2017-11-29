@@ -37,4 +37,7 @@ Visit the links to know more!!!
 12 - Key Sequence Detection - <a href="https://joydeeproy87.github.io/JavaScript_30/12-Key_Sequence_Detection/" target="_blank">See Demo</a>
 
 
+13 - Slide in on Scroll - <a href="https://joydeeproy87.github.io/JavaScript_30/13-Slide_in_on_Scroll/" target="_blank">See Demo</a>
+
+
 15 - LocalStorage - <a href="https://joydeeproy87.github.io/JavaScript_30/15-LocalStorage/" target="_blank">See Demo</a>
