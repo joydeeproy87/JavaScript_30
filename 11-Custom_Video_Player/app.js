@@ -17,5 +17,13 @@ function togglePlay () {
 	video[method]();
 }
 
-// Hook up the event listener
+function updateButton() {
+	console.log('update the button');
+}
 
+// Hook up the event listener
+video.addEventListener('click', togglePlay);
+video.addEventListener('play', updateButton);
+video.addEventListener('pause', updateButton);
+
+toggle.addEventListener('click', togglePlay);
