@@ -56,7 +56,7 @@ body {
 }
 
 .player__button:focus {
-   border-color: #ffc600;
+   border-color: yellow;
 }
 
 .player__slider {
@@ -69,7 +69,7 @@ body {
    position: absolute;
    bottom: 0;
    width: 100%;
-   /* transform: translateY(100%) translateY(-5px); */
+   transform: translateY(100%) translateY(-5px);
    transition: all .3s;
    flex-wrap: wrap;
    background: rgba(0, 0, 0, 0.1);
@@ -99,10 +99,10 @@ body {
 }
 
 .progress__filled {
-   width: 50%;
-   background: #ffc600;
+   width: 100%;
+   background: yellow;
    flex: 0;
-   flex-basis: 50%;
+   flex-basis: 100%;
 }
 
 /* unholy css to style input type="range" */
@@ -132,7 +132,7 @@ input[type=range]::-webkit-slider-thumb {
    height: 15px;
    width: 15px;
    border-radius: 50px;
-   background: #ffc600;
+   background: yellow;
    cursor: pointer;
    -webkit-appearance: none;
    margin-top: -3.5px;
@@ -158,6 +158,6 @@ input[type=range]::-moz-range-thumb {
    height: 15px;
    width: 15px;
    border-radius: 50px;
-   background: #ffc600;
+   background: yellow;
    cursor: pointer;
 }
