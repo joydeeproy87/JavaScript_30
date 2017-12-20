@@ -47,3 +47,6 @@ Visit the links to know more!!!
 
 
 16 - Mouse Move Shadow - <a href="https://joydeeproy87.github.io/JavaScript_30/16-Mouse_Move_Shadow/index.html" target="_blank">See Demo</a>
+
+
+17 - Sort Without Articles - <a href="https://joydeeproy87.github.io/JavaScript_30/17-Sort_Without_Articles/index.html" target="_blank">See Demo</a>
