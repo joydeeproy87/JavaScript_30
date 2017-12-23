@@ -50,3 +50,6 @@ Visit the links to know more!!!
 
 
 17 - Sort Without Articles - <a href="https://joydeeproy87.github.io/JavaScript_30/17-Sort_Without_Articles/index.html" target="_blank">See Demo</a>
+
+
+18 - Adding Up Times with Reduce - <a href="https://joydeeproy87.github.io/JavaScript_30/18-Adding_Up_Times_with_Reduce/index.html" target="_blank">See Demo</a>
