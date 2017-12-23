@@ -21,12 +21,12 @@
 	      width: 500px;
 	      margin: auto;
 	      padding: 0;
-	      box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.05);
+	      box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.05);
 	   }
 
 	   #bands li {
 	      border-bottom: 1px solid #efefef;
-	      padding: 20px;
+	      padding: 15px;
 	   }
 
 	   #bands li:last-child {
@@ -40,12 +40,30 @@
 	</style>
 </head>
 <body>
-	<ul id="brands"></ul>
+	<ul id="bands"></ul>
 
 	<script>
 		const bands = ['The Plot in You', 'The Devil Wears Prada', 'Pierce the Veil', 'Norma Jean', 'The Bled', 'Say Anything', 'The Midway State', 'We Came as Romans', 'Counterparts', 'Oh, Sleeper', 'A Skylit Drive', 'Anywhere But Here', 'An Old Dog'];
 
-		const sortedBands = bands.sort((a, b) => a - b);
+		// filtering if (a / an / the) is present at the start of the string
+		function strip (bandname) {
+			return bandname.replace(/^(a |the |an )/i, '').trim();
+		}
+
+		// filtering the array excluding (a / an / the) on start of the string
+		const sortedBands = bands.sort((a, b) => strip(a) > strip(b) ? 1 : -1);
+
+		// const sortedBands = bands.sort((a, b) => {
+		// 	if (strip(a) > strip(b)) {
+		// 		return 1;
+		// 	} else {
+		// 		return -1;
+		// 	}
+		// });
+
+		console.log(sortedBands);
+
+		document.querySelector('#bands').innerHTML = sortedBands.map(band => `<li>${band}</li>`).join('');
 	</script>
 </body>
 </html>
