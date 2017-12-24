@@ -53,3 +53,6 @@ Visit the links to know more!!!
 
 
 18 - Adding Up Times with Reduce - <a href="https://joydeeproy87.github.io/JavaScript_30/18-Adding_Up_Times_with_Reduce/index.html" target="_blank">See Demo</a>
+
+
+19 - Webcam Fun - <a href="https://joydeeproy87.github.io/JavaScript_30/19-Webcam_Fun/index.html" target="_blank">See Demo</a>
