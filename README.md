@@ -59,3 +59,6 @@ Visit the links to know more!!!
 
 
 21 - Geolocation - <a href="https://joydeeproy87.github.io/JavaScript_30/21-Geolocation/index.html" target="_blank">See Demo</a>
+
+
+22 - Follow Along Link Highlighter - <a href="https://joydeeproy87.github.io/JavaScript_30/22-Follow_Along_Link_Highlighter/index.html" target="_blank">See Demo</a>
