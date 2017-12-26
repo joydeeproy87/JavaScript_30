@@ -20,7 +20,7 @@
 		 border-radius: 5px;
 		 box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
 		 padding: 1rem 2rem 1rem 5rem;
-		 background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px;
+		 /* background: -webkit-gradient(linear, 0 0, 0 100%, from(#d9eaf3), color-stop(4%, #fff)) 0 4px; */
 		 background-size: 100% 3rem;
 		 position: relative;
 		 line-height: 3rem;
@@ -44,7 +44,35 @@
 	<div class="words" contenteditable></div>
 
 	<script>
+		const words = document.querySelector('.words');
 
+		window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+		const recognition = new SpeechRecognition();
+		recognition.interimResults = true;
+
+		let p = document.createElement('p');
+		words.appendChild(p);
+
+		recognition.addEventListener('result', e => {
+			// console.log(e.results);
+			const transcript = Array.from(e.results)
+				.map(result => result[0])
+				.map(result => result.transcript)
+				.join('');
+
+			p.textContent = transcript;
+
+			if (e.results[0].isFinal) {
+				p = document.createElement('p');
+				words.appendChild(p);
+			}
+			// console.log(transcript);
+			window.scrollTo(0,document.body.scrollHeight);
+		});
+
+		recognition.addEventListener('end', recognition.start);
+
+		recognition.start();
 	</script>
 </body>
 </html>
