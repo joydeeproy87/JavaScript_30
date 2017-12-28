@@ -1,5 +1,5 @@
 # 30 Days Vanilla JS Challenge
-Visit the links to know more!!!
+Visit the links to see the demos!!!
 
 01 - JavaScript Drum Kit - <a href="https://joydeeproy87.github.io/JavaScript_30/01-JavaScript_Drum_Kit/index.html" target="_blank">See Demo</a>
 
@@ -65,3 +65,9 @@ Visit the links to know more!!!
 
 
 22 - Follow Along Link Highlighter - <a href="https://joydeeproy87.github.io/JavaScript_30/22-Follow_Along_Link_Highlighter/index.html" target="_blank">See Demo</a>
+
+
+23 - Speech Synthesis - <a href="https://joydeeproy87.github.io/JavaScript_30/23-Speech_Synthesis/index.html" target="_blank">See Demo</a>
+
+
+24 - Sticky Nav - <a href="https://joydeeproy87.github.io/JavaScript_30/24-Sticky_Nav/index.html" target="_blank">See Demo</a>
