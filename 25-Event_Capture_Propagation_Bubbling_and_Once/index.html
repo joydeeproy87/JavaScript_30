@@ -1,10 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>25-Event Capture, Propagation, Bubbling and Once</title>
+	<style>
+		 html {
+		     background-color: black;
+		     box-sizing: border-box;
+		}
+		 *, *:before, *:after {
+		     box-sizing: inherit;
+		}
+		 p {
+		     color: yellow;
+		}
+		 div {
+		     width: 100%;
+		     padding: 100px;
+		}
+		 .one {
+		     background: thistle;
+		}
+		 .two {
+		     background: mistyrose;
+		}
+		 .three {
+		     background: coral;
+		}
+	</style>
 </head>
-<body>
-	
+
+<body class="bod">
+	<p><em>Hit "F12" or open console then refresh this page to see this in action!!!</em></p>
+
+	<div class="one">
+		<div class="two">
+			<div class="three"></div>
+		</div>
+	</div>
+
+	<button>This button is clickable only once!!!</button>
+
+	<script>
+		const divs = document.querySelectorAll('div');
+		const button = document.querySelector('button');
+
+		function logText(e) {
+			console.log(this.classList.value);
+			// console.log(this);
+			// e.stopPropagation();
+		}
+
+		divs.forEach(div => div.addEventListener('click', logText, {
+			capture: false,
+			once: true
+		}));
+
+		button.addEventListener('click', () => {
+			console.log('Click!!!');
+		}, {
+			once: true
+		});
+	</script>
 </body>
 </html>

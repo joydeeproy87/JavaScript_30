@@ -71,3 +71,6 @@ Visit the links to see the demos!!!
 
 
 24 - Sticky Nav - <a href="https://joydeeproy87.github.io/JavaScript_30/24-Sticky_Nav/index.html" target="_blank">See Demo</a>
+
+
+25 - Event Capture, Propagation, Bubbling and Once - <a href="https://joydeeproy87.github.io/JavaScript_30/25-Event_Capture_Propagation_Bubbling_and_Once/index.html" target="_blank">See Demo</a>
