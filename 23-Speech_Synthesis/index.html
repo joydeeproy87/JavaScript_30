@@ -3,14 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>23-Speech Synthesis</title>
-	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="app.css">
 </head>
 <body>
 	<div class="voiceinator">
-		
+
 		<h1>The Voiceinator 5000</h1>
-		
+
 		<select name="voice" id="voices">
 			<option value="">Select A Voice</option>
 		</select>
@@ -23,6 +21,28 @@
 		<button id="stop">Stop!</button>
 		<button id="speak">Speak</button>
 	</div>
+
+
+	<noscript id="deferred-styles">
+		<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="app.css">
+	</noscript>
+
+	<script>
+		var loadDeferredStyles = function() {
+			var addStylesNode = document.getElementById("deferred-styles");
+			var replacement = document.createElement("div");
+			replacement.innerHTML = addStylesNode.textContent;
+			document.body.appendChild(replacement)
+			addStylesNode.parentElement.removeChild(addStylesNode);
+		};
+		var raf = window.requestAnimationFrame || window.mozRequestAnimationFrame ||
+			window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+		if (raf) raf(function() {
+			window.setTimeout(loadDeferredStyles, 0);
+		});
+		else window.addEventListener('load', loadDeferredStyles);
+	</script>
 
 	<script>
 		const msg = new SpeechSynthesisUtterance();
