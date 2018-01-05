@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>28-Video Speed Controller</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<video src="big-bunny.mp4" class="flex" width="765" height="430" loop controls autoplay></video>
+		<div class="speed">
+			<div class="speed-bar">1x</div>
+		</div>
+	</div>
+
+	<script>
+		alert('Use the vertical bar to control video speed');
+
+		const speed = document.querySelector('.speed');
+		const bar = document.querySelector('.speed-bar');
+		const video = document.querySelector('.flex');
+
+		function handleMove (e) {
+			const y = e.pageY - this.offsetTop;
+			const percent = y / this.offsetHeight;
+			const min = 0.5;
+			const max = 4;
+			const height = Math.round(percent * 100) + '%';
+			// console.log(height);
+			// console.log(percent);
+
+			// managing playbackRate
+			const playbackRate = percent * (max - min) + min;
+			bar.style.height = height;
+			bar.textContent = playbackRate.toFixed(1) + 'x';
+			video.playbackRate = playbackRate;
+		}
+
+		speed.addEventListener('mousemove', handleMove);
+	</script>
+</body>
+</html>

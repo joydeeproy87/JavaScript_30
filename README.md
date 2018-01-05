@@ -77,3 +77,6 @@ Visit the links to see the demos!!!
 
 
 26 - Stripe Follow Along Nav - <a href="https://joydeeproy87.github.io/JavaScript_30/26-Stripe_Follow_Along_Nav/index.html" target="_blank">See Demo</a>
+
+
+28 - Video Speed Controller - <a href="https://joydeeproy87.github.io/JavaScript_30/28-Video_Speed_Controller/index.html" target="_blank">See Demo</a>
