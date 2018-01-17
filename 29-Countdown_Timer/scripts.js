@@ -1,2 +1,1 @@
-function timer (seconds) {
-}
+function timer (seconds) {}
