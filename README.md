@@ -73,7 +73,7 @@ Visit the links to see the demos!!!
 24 - Sticky Nav - <a href="https://joydeeproy87.github.io/JavaScript_30/24-Sticky_Nav/index.html" target="_blank">See Demo</a>
 
 
-25 - Event Capture, Propagation, Bubbling and Once - <a href="https://joydeeproy87.github.io/JavaScript_30/25-Event_Capture_Propagation_Bubbling_Once/index.html" target="_blank">See Demo</a>
+25 - Event Capture, Propagation, Bubbling - <a href="https://joydeeproy87.github.io/JavaScript_30/25-Event_Capture_Propagation_Bubbling/index.html" target="_blank">See Demo</a>
 
 
 26 - Stripe Follow Along Nav - <a href="https://joydeeproy87.github.io/JavaScript_30/26-Stripe_Follow_Along_Nav/index.html" target="_blank">See Demo</a>
