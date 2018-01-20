@@ -58,3 +58,5 @@ Visit the links to see the demos!!!
 28 - Video Speed Controller - <a href="https://joydeeproy87.github.io/JavaScript_30/28-Video_Speed_Controller/index.html" target="_blank">See Demo</a>
 
 29 - Countdown Timer - <a href="https://joydeeproy87.github.io/JavaScript_30/29-Countdown_Timer/index.html" target="_blank">See Demo</a>
+
+30 - Whack A Mole - <a href="https://joydeeproy87.github.io/JavaScript_30/30-Whack_A_Mole/index.html" target="_blank">See Demo</a>
