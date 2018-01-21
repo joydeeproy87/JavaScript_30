@@ -36,7 +36,37 @@
       </div>
    </div>
 
-   <script></script>
+   <script>
+      const holes = document.querySelectorAll('.hole');
+      const moles = document.querySelectorAll('.mole');
+      const scoreBoard = document.querySelector('.score');
+      let lastHole;
+
+    // console.log(holes, moles, scoreBoard);
+      function randomTime(min, max) {
+         return Math.round(Math.random() * (max - min) + min);
+      }
+
+      function randomHole(holes) {
+         const idx = Math.floor(Math.random() * holes.length);
+         const hole = holes[idx];
+         if (hole === lastHole) {
+            console.log('Oh Noo! same hole once again!');
+            return randomHole(holes);
+         }
+         lastHole = hole;
+         return hole;
+      }
+
+      function peep() {
+         const time = randomTime(500, 2000);
+         const hole = randomHole(holes);
+         hole.classList.add('up');
+         setTimeout(() => {
+            hole.classList.remove('up');
+         }, time);
+      }
+   </script>
 </body>
 
 </html>
