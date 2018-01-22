@@ -39,7 +39,7 @@ Visit the links to see the demos!!!
 
 19 - Webcam Fun - <a href="https://joydeeproy87.github.io/JavaScript_30/19-Webcam_Fun/index.html" target="_blank">See Demo</a>
 
-20 - Speech_Detection - <a href="https://joydeeproy87.github.io/JavaScript_30/20-Speech_Detection/index.html" target="_blank">See Demo</a>
+20 - Speech Detection - <a href="https://joydeeproy87.github.io/JavaScript_30/20-Speech_Detection/index.html" target="_blank">See Demo</a>
 
 21 - Geolocation - <a href="https://joydeeproy87.github.io/JavaScript_30/21-Geolocation/index.html" target="_blank">See Demo</a>
 
